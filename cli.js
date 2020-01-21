@@ -111,23 +111,23 @@ fs.readFile(opt.charsetFile || '', 'utf8', (error, data) => {
         });
         fs.writeFile(`${texture.filename}.svg`, content , (err) => {
           if (err) throw err;
-          console.log('wrote svg[', index, ']         : ', `${texture.filename}.svg`);
+          console.log('wrote a svg[', index, ']         : ', `${texture.filename}.svg`);
         });
       } 
       fs.writeFile(`${texture.filename}.png`, texture.texture, (err) => {
         if (err) throw err;
-        console.log('wrote spritesheet[', index, '] : ', `${texture.filename}.png`);
+        console.log('wrote a spritesheet[', index, '] : ', `${texture.filename}.png`);
       });
     });
     fs.writeFile(font.filename, font.data, (err) => {
       if (err) throw err;
-      console.log('wrote font file        : ', font.filename);
+      console.log('wrote a font file        : ', font.filename);
     });
     if(opt.reuse !== false) {
       let cfgFileName = typeof opt.reuse === 'boolean' ? `${textures[0].filename}.cfg` : opt.reuse;
       fs.writeFile(cfgFileName, JSON.stringify(font.settings, null, '\t'), (err) => {
         if (err) throw err;
-        console.log('wrote cfg file         : ', cfgFileName);
+        console.log('wrote a cfg file         : ', cfgFileName);
       });
     }
   });

@@ -4,6 +4,8 @@
 [![npm version](https://badge.fury.io/js/msdf-bmfont-xml.svg)](https://badge.fury.io/js/msdf-bmfont-xml)
 ![npm](https://img.shields.io/npm/dm/msdf-bmfont-xml.svg)
 
+```npm install alex-clay/msdf-bmfont-xml```
+
 Converts a `.ttf` font file into multichannel signed distance fields, then outputs packed spritesheets and a xml(.fnt} or json representation of an AngelCode BMfont.
 
 Signed distance fields are a method of reproducing vector shapes from a texture representation, popularized in [this paper by Valve](http://www.valvesoftware.com/publications/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf).
