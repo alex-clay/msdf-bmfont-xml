@@ -4,7 +4,7 @@
 [![npm version](https://badge.fury.io/js/msdf-bmfont-xml.svg)](https://badge.fury.io/js/msdf-bmfont-xml)
 ![npm](https://img.shields.io/npm/dm/msdf-bmfont-xml.svg)
 
-```npm install alex-clay/msdf-bmfont-xml```
+```sudo npm install -g alex-clay/msdf-bmfont-xml```
 
 Converts a `.ttf` font file into multichannel signed distance fields, then outputs packed spritesheets and a xml(.fnt} or json representation of an AngelCode BMfont.
 
